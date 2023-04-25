@@ -1,0 +1,4 @@
+aws api access key
+id: AKIAZYELJGKCMZCV5AWR
+scret: GB+LXkfWwnqKxQRdY3zgyx8o+tkYPbkBXxPvj42E
+https://dev.d2n7dbxfkz3yi.amplifyapp.com/
