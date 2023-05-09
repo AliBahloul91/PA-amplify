@@ -1,0 +1,357 @@
+.mediaViewInfo {
+    --web-view-name: Landing page;
+    --web-view-id: Landing_page;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Landing_page;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+  
+#Landing_page {
+    position: absolute;
+    width: 100%;
+    height: 2324px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: Landing page;
+    --web-view-id: Landing_page;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#Mask_Group_1 {
+    position: absolute;
+    width: 110%;
+    height: 959px;
+    left: -22px;
+    top: 0px;
+    overflow: visible;
+}
+#nav_bar {
+    position: absolute;
+    width: 100%;
+    height: 122px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_1 {
+    filter: blur(8px);
+    fill: rgba(255,166,99,0);
+}
+.Rectangle_1 {
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    height: 122px;
+    left: 0px;
+    top: 0px;
+}
+#Gym {
+    left: 144px;
+    top: 40px;
+    position: absolute;
+    overflow: visible;
+    width: 81px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgba(255,255,255,1);
+}
+#Home {
+    left: 50%;
+    top: 45px;
+    position: absolute;
+    overflow: visible;
+    width: 75px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(255,255,255,1);
+}
+#profile {
+    left: 60%;
+    top: 45px;
+    position: absolute;
+    overflow: visible;
+    width: 79px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(255,255,255,1);
+}
+#my_exercises {
+    left: 70%;
+    top: 45px;
+    position: absolute;
+    overflow: visible;
+    width: 162px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(255,255,255,1);
+}
+#Studio {
+    left: 90%;
+    top: 45px;
+    position: absolute;
+    overflow: visible;
+    width: 78px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgba(255,255,255,1);
+}
+#Your_Workout_Your_Day {
+    left: 130px;
+    top: 308px;
+    position: absolute;
+    overflow: visible;
+    width: 664px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 99px;
+    color: rgba(253,252,255,1);
+}
+#Create_your__Workout_Plan_ {
+    left: 130px;
+    top: 1052px;
+    position: absolute;
+    overflow: visible;
+    width: 660px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 99px;
+    color: rgba(35,32,42,1);
+}
+#Get_your_daily_dose_of_movemen {
+    left: 130px;
+    top: 571px;
+    position: absolute;
+    overflow: visible;
+    width: 635px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgba(253,252,255,1);
+}
+#Get_your_daily_dose_of_movemen_v {
+    left: 130px;
+    top: 1345px;
+    position: absolute;
+    overflow: visible;
+    width: 635px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgba(35,32,42,1);
+}
+#Button_-_Sign_up {
+    position: absolute;
+    width: 218px;
+    height: 58px;
+    left: 130px;
+    top: 684px;
+    overflow: visible;
+}
+#Rectangle_2 {
+    fill: rgba(171,130,255,1);
+}
+.Rectangle_2 {
+    position: absolute;
+    overflow: visible;
+    width: 218px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+}
+#Sign_up_ {
+    left: 66px;
+    top: 13px;
+    position: absolute;
+    overflow: visible;
+    width: 93px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Button_-_log_in {
+    position: absolute;
+    width: 218px;
+    height: 58px;
+    left: 383px;
+    top: 684px;
+    overflow: visible;
+}
+#Rectangle_2_ {
+    fill: rgba(171,130,255,1);
+}
+.Rectangle_2_ {
+    position: absolute;
+    overflow: visible;
+    width: 218px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+}
+#Log_in {
+    left: 74px;
+    top: 13px;
+    position: absolute;
+    overflow: visible;
+    width: 71px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Visby CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#sliders {
+    position: absolute;
+    width: 243px;
+    height: 33px;
+    left: 1595px;
+    top: 880px;
+    overflow: visible;
+}
+#Ellipse_2 {
+    filter: blur(1px);
+    fill: rgba(255,255,255,1);
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Ellipse_2 {
+    position: absolute;
+    overflow: visible;
+    width: 33px;
+    height: 33px;
+    left: 144px;
+    top: 0px;
+}
+#Ellipse_1 {
+    fill: rgba(218,219,219,1);
+}
+.Ellipse_1 {
+    position: absolute;
+    overflow: visible;
+    width: 9px;
+    height: 9px;
+    left: 0px;
+    top: 12px;
+}
+#Ellipse_3 {
+    fill: rgba(218,219,219,1);
+}
+.Ellipse_3 {
+    position: absolute;
+    overflow: visible;
+    width: 9px;
+    height: 9px;
+    left: 78px;
+    top: 12px;
+}
+#Ellipse_4 {
+    fill: rgba(218,219,219,1);
+}
+.Ellipse_4 {
+    position: absolute;
+    overflow: visible;
+    width: 9px;
+    height: 9px;
+    left: 156px;
+    top: 12px;
+}
+#Ellipse_7 {
+    fill: rgba(218,219,219,1);
+}
+.Ellipse_7 {
+    position: absolute;
+    overflow: visible;
+    width: 9px;
+    height: 9px;
+    left: 234px;
+    top: 12px;
+}
+#Rectangle_4 {
+    fill: rgba(183,183,183,1);
+}
+.Rectangle_4 {
+    position: absolute;
+    overflow: visible;
+    width: 473px;
+    height: 470px;
+    left: 1323px;
+    top: 1078px;
+}
+#Rectangle_5 {
+    fill: rgba(35,32,42,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_5 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 583px;
+    left: 0px;
+    top: 1741px;
+}
+#Image_1 {
+    display: none;
+    position: absolute;
+    width: 4540px;
+    height: 583px;
+    left: -875px;
+    top: 1741px;
+    overflow: visible;
+}
+
+
