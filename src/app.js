@@ -1,8 +1,6 @@
 import { Amplify, Auth } from 'aws-amplify';
 import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
-import * from '../assets';
-import * from '../Images';
 
 import { withAuthenticator } from '@aws-amplify/ui-react';
 //import '@aws-amplify/ui-react/styles.css';
