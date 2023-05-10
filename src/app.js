@@ -1,5 +1,6 @@
-import './assets/gym.css';
-
+import mainImage from './Images/Mask_Group_1.png';
+img.src = mainImage;
+import'./assets/gym.css';
 import { Amplify, Auth } from 'aws-amplify';
 import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
