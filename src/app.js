@@ -1,7 +1,7 @@
-
 import { Amplify, Auth } from 'aws-amplify';
 import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
+
 
 import { withAuthenticator } from '@aws-amplify/ui-react';
 //import '@aws-amplify/ui-react/styles.css';
@@ -12,16 +12,13 @@ Amplify.configure(awsExports);
 export default withAuthenticator(App);
 import {  API, graphqlOperation } from "aws-amplify";
  
-import { createTodo } from "./graphql/mutations";
-import { listTodos } from "./graphql/queries";
-import { onCreateTodo } from "./graphql/subscriptions";
+ import { createTodo } from "./graphql/mutations";
+ import { listTodos } from "./graphql/queries";
+ import { onCreateTodo } from "./graphql/subscriptions";
 
-Amplify.configure(awsconfig);
-import mainImage from './Images/Mask_Group_1.png';
-img.src = mainImage;
-import './gym.css';
-  
-async function createNewTodo() {
+ Amplify.configure(awsconfig);
+
+ async function createNewTodo() {
    const todo = {
      name: "Use AppSync",
      description: `Realtime and Offline (${new Date().toLocaleString()})`,
@@ -57,3 +54,9 @@ API.graphql(graphqlOperation(onCreateTodo)).subscribe({
 });
 
  getData();
+
+ import mainImage from './Images/Mask_Group_1.png';
+
+ img.src = mainImage;
+
+ import './gym.css';
