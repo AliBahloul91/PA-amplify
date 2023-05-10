@@ -19,7 +19,7 @@ import { onCreateTodo } from "./graphql/subscriptions";
 Amplify.configure(awsconfig);
 import mainImage from './Images/Mask_Group_1.png';
 img.src = mainImage;
-import'./gym.css';
+import './gym.css';
   
 async function createNewTodo() {
    const todo = {
