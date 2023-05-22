@@ -9,6 +9,22 @@
      scroll-behavior: smooth;
 }
 
+
+.btn_create{
+    color: white ;
+    background-color: rgb(163, 108, 214);
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 800;
+    display: inline-block;
+    padding: 0.5375em 3.1875em;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    margin-left: 50px;
+    transition: 0.7s ease;
+
+}
+
 header{
     background-color: transparent;
     position: fixed;
