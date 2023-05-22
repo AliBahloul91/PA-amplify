@@ -10,20 +10,7 @@
 }
 
 
-.btn_create{
-    color: white ;
-    background-color: rgb(163, 108, 214);
-    text-decoration: none;
-    font-size: 1.4em;
-    font-weight: 800;
-    display: inline-block;
-    padding: 0.5375em 3.1875em;
-    letter-spacing: 2px;
-    border-radius: 20px;
-    margin-left: 50px;
-    transition: 0.7s ease;
 
-}
 
 header{
     background-color: transparent;
@@ -108,6 +95,20 @@ section{
     margin-top: 120px;
     margin-bottom: 40px;
 }
+.btn_create{
+    color: white ;
+    background-color: rgb(163, 108, 214);
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 800;
+    display: inline-block;
+    padding: 0.5375em 3.1875em;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    margin-left: 50px;
+    transition: 0.7s ease;
+
+}
 
 
 .main-btn-up{
@@ -163,6 +164,10 @@ section{
     background-color: #5f0fff;
     transform: scale(1.1,1.1);
 }
+.btn_create:hover{
+    background-color: #5f0fff;
+    transform: scale(1.1,1.1);
+    
 .titel{
     display: flex;
     justify-content: center;

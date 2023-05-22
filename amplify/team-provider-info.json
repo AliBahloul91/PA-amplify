@@ -23,6 +23,15 @@
       },
       "auth": {
         "amplifyjsappbe92e138": {}
+      },
+      "function": {
+        "amplifyjsapp935cb81a": {
+          "userName": "String",
+          "secretsPathAmplifyAppId": "d2n7dbxfkz3yi"
+        },
+        "amplifyjsappcf233609": {
+          "uSer": "sTRING"
+        }
       }
     }
   }

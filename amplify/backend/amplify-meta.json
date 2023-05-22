@@ -37,6 +37,20 @@
       },
       "lastPushTimeStamp": "2023-04-25T11:07:08.740Z",
       "lastPushDirHash": "WQPYjCExyaIHH+JAhbcxV1+ybAU="
+    },
+    "apib14c2c90": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "amplifyjsappcf233609",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
     }
   },
   "hosting": {
@@ -92,6 +106,29 @@
         "UserPoolName": "amplifyjsappbe92e138_userpool_be92e138"
       },
       "lastPushDirHash": "5smyBmXS0HP7VYOMjjIlXDxYIHI="
+    }
+  },
+  "function": {
+    "amplifyjsapp935cb81a": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "api",
+          "resourceName": "amplifyjsapp",
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput"
+          ]
+        }
+      ]
+    },
+    "amplifyjsappcf233609": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": []
     }
   }
 }

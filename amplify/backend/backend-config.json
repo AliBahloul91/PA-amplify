@@ -15,6 +15,20 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "AppSync"
+    },
+    "apib14c2c90": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "amplifyjsappcf233609"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
     }
   },
   "auth": {
@@ -43,6 +57,29 @@
       "service": "Cognito"
     }
   },
+  "function": {
+    "amplifyjsapp935cb81a": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput"
+          ],
+          "category": "api",
+          "resourceName": "amplifyjsapp"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "amplifyjsappcf233609": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "hosting": {
     "amplifyhosting": {
       "providerPlugin": "awscloudformation",
@@ -51,6 +88,30 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_amplifyjsapp935cb81a_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyjsapp935cb81a"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyjsapp935cb81a_userName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyjsapp935cb81a"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyjsappcf233609_uSer": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyjsappcf233609"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
