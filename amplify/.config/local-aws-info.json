@@ -3,5 +3,10 @@
     "configLevel": "project",
     "useProfile": false,
     "awsConfigFilePath": "/home/abahloul/.amplify/awscloudformation/wRJnRJAT0t"
+  },
+  "devv": {
+    "configLevel": "project",
+    "useProfile": true,
+    "profileName": "default"
   }
 }

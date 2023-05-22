@@ -2,13 +2,13 @@
   "Description": "API Gateway Resource for AWS Amplify CLI",
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
-    "functionamplifyjsappcf233609Name": {
+    "functionamplifyjsapp37ae10a8Name": {
       "Type": "String",
-      "Default": "functionamplifyjsappcf233609Name"
+      "Default": "functionamplifyjsapp37ae10a8Name"
     },
-    "functionamplifyjsappcf233609Arn": {
+    "functionamplifyjsapp37ae10a8Arn": {
       "Type": "String",
-      "Default": "functionamplifyjsappcf233609Arn"
+      "Default": "functionamplifyjsapp37ae10a8Arn"
     },
     "env": {
       "Type": "String"
@@ -33,7 +33,7 @@
           [
             "https://",
             {
-              "Ref": "apib14c2c90"
+              "Ref": "api517946b8"
             },
             ".execute-api.",
             {
@@ -55,22 +55,22 @@
     },
     "ApiName": {
       "Description": "API Friendly name",
-      "Value": "apib14c2c90"
+      "Value": "api517946b8"
     },
     "ApiId": {
       "Description": "API ID (prefix of API URL)",
       "Value": {
-        "Ref": "apib14c2c90"
+        "Ref": "api517946b8"
       }
     }
   },
   "Resources": {
-    "functionamplifyjsappcf233609Permissionapib14c2c90": {
+    "functionamplifyjsapp37ae10a8Permissionapi517946b8": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
         "FunctionName": {
-          "Ref": "functionamplifyjsappcf233609Name"
+          "Ref": "functionamplifyjsapp37ae10a8Name"
         },
         "Principal": "apigateway.amazonaws.com",
         "SourceArn": {
@@ -87,7 +87,7 @@
               },
               ":",
               {
-                "Ref": "apib14c2c90"
+                "Ref": "api517946b8"
               },
               "/*/*/*"
             ]
@@ -95,14 +95,14 @@
         }
       }
     },
-    "apib14c2c90": {
+    "api517946b8": {
       "Type": "AWS::ApiGateway::RestApi",
       "Properties": {
         "Body": {
           "swagger": "2.0",
           "info": {
             "version": "2018-05-24T17:52:00Z",
-            "title": "apib14c2c90"
+            "title": "api517946b8"
           },
           "host": {
             "Fn::Join": [
@@ -137,7 +137,7 @@
             "https"
           ],
           "paths": {
-            "/items": {
+            "/user/{user}": {
               "options": {
                 "consumes": [
                   "application/json"
@@ -220,7 +220,7 @@
                         },
                         ":lambda:path/2015-03-31/functions/",
                         {
-                          "Ref": "functionamplifyjsappcf233609Arn"
+                          "Ref": "functionamplifyjsapp37ae10a8Arn"
                         },
                         "/invocations"
                       ]
@@ -229,15 +229,10 @@
                   "passthroughBehavior": "when_no_match",
                   "httpMethod": "POST",
                   "type": "aws_proxy"
-                },
-                "security": [
-                  {
-                    "sigv4": []
-                  }
-                ]
+                }
               }
             },
-            "/items/{proxy+}": {
+            "/user/{user}/{proxy+}": {
               "options": {
                 "consumes": [
                   "application/json"
@@ -320,7 +315,7 @@
                         },
                         ":lambda:path/2015-03-31/functions/",
                         {
-                          "Ref": "functionamplifyjsappcf233609Arn"
+                          "Ref": "functionamplifyjsapp37ae10a8Arn"
                         },
                         "/invocations"
                       ]
@@ -329,12 +324,7 @@
                   "passthroughBehavior": "when_no_match",
                   "httpMethod": "POST",
                   "type": "aws_proxy"
-                },
-                "security": [
-                  {
-                    "sigv4": []
-                  }
-                ]
+                }
               }
             }
           },
@@ -375,15 +365,15 @@
         },
         "Description": "",
         "FailOnWarnings": true,
-        "Name": "apib14c2c90"
+        "Name": "api517946b8"
       }
     },
-    "apib14c2c90Default4XXResponse3ee3050c": {
+    "api517946b8Default4XXResponse55a48a21": {
       "Type": "AWS::ApiGateway::GatewayResponse",
       "Properties": {
         "ResponseType": "DEFAULT_4XX",
         "RestApiId": {
-          "Ref": "apib14c2c90"
+          "Ref": "api517946b8"
         },
         "ResponseParameters": {
           "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
@@ -393,12 +383,12 @@
         }
       }
     },
-    "apib14c2c90Default5XXResponse3ee3050c": {
+    "api517946b8Default5XXResponse55a48a21": {
       "Type": "AWS::ApiGateway::GatewayResponse",
       "Properties": {
         "ResponseType": "DEFAULT_5XX",
         "RestApiId": {
-          "Ref": "apib14c2c90"
+          "Ref": "api517946b8"
         },
         "ResponseParameters": {
           "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
@@ -408,11 +398,11 @@
         }
       }
     },
-    "DeploymentAPIGWapib14c2c90a53d4c29": {
+    "DeploymentAPIGWapi517946b8bffde980": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
-          "Ref": "apib14c2c90"
+          "Ref": "api517946b8"
         },
         "Description": "The Development stage deployment of your API.",
         "StageName": {
@@ -426,8 +416,8 @@
         }
       },
       "DependsOn": [
-        "apib14c2c90Default4XXResponse3ee3050c",
-        "apib14c2c90Default5XXResponse3ee3050c"
+        "api517946b8Default4XXResponse55a48a21",
+        "api517946b8Default5XXResponse55a48a21"
       ]
     }
   }

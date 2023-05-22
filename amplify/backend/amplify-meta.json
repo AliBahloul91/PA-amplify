@@ -1,50 +1,56 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyjsapp-dev-00830-authRole",
-      "UnauthRoleArn": "arn:aws:iam::670307005060:role/amplify-amplifyjsapp-dev-00830-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::670307005060:role/amplify-amplifyjsapp-dev-00830-authRole",
+      "AuthRoleName": "amplify-amplifyjsapp-devv-141214-authRole",
+      "UnauthRoleArn": "arn:aws:iam::670307005060:role/amplify-amplifyjsapp-devv-141214-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::670307005060:role/amplify-amplifyjsapp-devv-141214-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-amplifyjsapp-dev-00830-deployment",
-      "UnauthRoleName": "amplify-amplifyjsapp-dev-00830-unauthRole",
-      "StackName": "amplify-amplifyjsapp-dev-00830",
-      "StackId": "arn:aws:cloudformation:us-east-1:670307005060:stack/amplify-amplifyjsapp-dev-00830/62a7cbd0-e223-11ed-8b9d-0e048620bb05",
-      "AmplifyAppId": "d2n7dbxfkz3yi"
+      "DeploymentBucketName": "amplify-amplifyjsapp-devv-141214-deployment",
+      "UnauthRoleName": "amplify-amplifyjsapp-devv-141214-unauthRole",
+      "StackName": "amplify-amplifyjsapp-devv-141214",
+      "StackId": "arn:aws:cloudformation:us-east-1:670307005060:stack/amplify-amplifyjsapp-devv-141214/e4eee6a0-f899-11ed-8381-12d31829d309",
+      "AmplifyAppId": "d2n7dbxfkz3yi",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplifyjsapp-devv-141214-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     }
   },
   "api": {
     "amplifyjsapp": {
-      "service": "AppSync",
-      "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "output": {
         "authConfig": {
+          "additionalAuthenticationProviders": [],
           "defaultAuthentication": {
-            "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 7
-            }
-          },
-          "additionalAuthenticationProviders": []
-        },
-        "GraphQLAPIIdOutput": "gtp3gzpa7vdt7g3dfk5boemt2q",
-        "GraphQLAPIEndpointOutput": "https://hfkycp23uffuxg3pe6ju2f5uwy.appsync-api.us-east-1.amazonaws.com/graphql",
-        "GraphQLAPIKeyOutput": "da2-5ssb4bikdvfbnaqqq4q7vmxj7u"
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
       },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyjsapp-dev-00830-deployment/amplify-cfn-templates/api/cloudformation-template.json",
-        "logicalId": "apiamplifyjsapp"
-      },
-      "lastPushTimeStamp": "2023-04-25T11:07:08.740Z",
-      "lastPushDirHash": "WQPYjCExyaIHH+JAhbcxV1+ybAU="
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
     },
     "apib14c2c90": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "amplifyjsappcf233609"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "api517946b8": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "amplifyjsappcf233609",
+          "resourceName": "amplifyjsapp37ae10a8",
           "attributes": [
             "Name",
             "Arn"
@@ -53,82 +59,65 @@
       ]
     }
   },
-  "hosting": {
-    "amplifyhosting": {
-      "service": "amplifyhosting",
-      "providerPlugin": "awscloudformation",
-      "type": "manual",
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyjsapp-dev-00830-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
-        "logicalId": "hostingamplifyhosting"
-      },
-      "lastPushTimeStamp": "2023-04-25T11:07:08.808Z",
-      "output": {},
-      "lastPushDirHash": "bYFm/ptTXWsXqJqwdC6ZQoQ7iQo="
-    }
-  },
   "auth": {
     "amplifyjsappbe92e138": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
       "customAuth": false,
+      "dependsOn": [],
       "frontendAuthConfig": {
-        "socialProviders": [],
-        "usernameAttributes": [],
-        "signupAttributes": [
-          "EMAIL"
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
         ],
         "passwordProtectionSettings": {
           "passwordPolicyMinLength": 8,
           "passwordPolicyCharacters": []
         },
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
+        "signupAttributes": [
+          "EMAIL"
         ],
+        "socialProviders": [],
+        "usernameAttributes": [],
         "verificationMechanisms": [
           "EMAIL"
         ]
       },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyjsapp-dev-00830-deployment/amplify-cfn-templates/auth/amplifyjsappbe92e138-cloudformation-template.json",
-        "logicalId": "authamplifyjsappbe92e138"
-      },
-      "lastPushTimeStamp": "2023-04-25T11:07:08.873Z",
-      "output": {
-        "UserPoolId": "us-east-1_Xqh7nxlsa",
-        "AppClientIDWeb": "1f5o5jgkl5a58dpsdg7m5g7npj",
-        "AppClientID": "40jbemlo87k3kk912ipkjr32n6",
-        "IdentityPoolId": "us-east-1:7051d243-6bdb-4a9c-82d8-3d9186ea83e2",
-        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:670307005060:userpool/us-east-1_Xqh7nxlsa",
-        "IdentityPoolName": "amplifyjsappbe92e138_identitypool_be92e138__dev",
-        "UserPoolName": "amplifyjsappbe92e138_userpool_be92e138"
-      },
-      "lastPushDirHash": "5smyBmXS0HP7VYOMjjIlXDxYIHI="
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
     }
   },
   "function": {
     "amplifyjsapp935cb81a": {
       "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
       "dependsOn": [
         {
-          "category": "api",
-          "resourceName": "amplifyjsapp",
           "attributes": [
             "GraphQLAPIIdOutput",
             "GraphQLAPIEndpointOutput"
-          ]
+          ],
+          "category": "api",
+          "resourceName": "amplifyjsapp"
         }
-      ]
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     },
     "amplifyjsappcf233609": {
       "build": true,
+      "dependsOn": [],
       "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": []
+      "service": "Lambda"
+    },
+    "amplifyjsapp37ae10a8": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "providerPlugin": "awscloudformation",
+      "service": "amplifyhosting",
+      "type": "manual"
     }
   }
 }

@@ -16,6 +16,20 @@
       "providerPlugin": "awscloudformation",
       "service": "AppSync"
     },
+    "api517946b8": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "amplifyjsapp37ae10a8"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
     "apib14c2c90": {
       "dependsOn": [
         {
@@ -58,6 +72,11 @@
     }
   },
   "function": {
+    "amplifyjsapp37ae10a8": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "amplifyjsapp935cb81a": {
       "build": true,
       "dependsOn": [

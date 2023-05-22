@@ -31,6 +31,42 @@
         },
         "amplifyjsappcf233609": {
           "uSer": "sTRING"
+        },
+        "amplifyjsapp": {}
+      }
+    }
+  },
+  "devv": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyjsapp-devv-141214-authRole",
+      "UnauthRoleArn": "arn:aws:iam::670307005060:role/amplify-amplifyjsapp-devv-141214-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::670307005060:role/amplify-amplifyjsapp-devv-141214-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifyjsapp-devv-141214-deployment",
+      "UnauthRoleName": "amplify-amplifyjsapp-devv-141214-unauthRole",
+      "StackName": "amplify-amplifyjsapp-devv-141214",
+      "StackId": "arn:aws:cloudformation:us-east-1:670307005060:stack/amplify-amplifyjsapp-devv-141214/e4eee6a0-f899-11ed-8381-12d31829d309",
+      "AmplifyAppId": "d2n7dbxfkz3yi"
+    },
+    "categories": {
+      "auth": {
+        "amplifyjsappbe92e138": {}
+      },
+      "function": {
+        "amplifyjsapp935cb81a": {
+          "userName": "String",
+          "secretsPathAmplifyAppId": "d2n7dbxfkz3yi"
+        },
+        "amplifyjsappcf233609": {
+          "uSer": "sTRING"
+        },
+        "amplifyjsapp": {},
+        "amplifyjsapp37ae10a8": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2n7dbxfkz3yi",
+          "type": "manual"
         }
       }
     }
